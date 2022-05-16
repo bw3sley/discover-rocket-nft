@@ -6,6 +6,8 @@
     --subtitle-color: #5a5757;
     --black-text: #000;
     --color-input: #0D0D0D;
+
+    font-size: 62.5%;
 }
 
 *, *::before, *::after {
@@ -14,5 +16,509 @@
 
     box-sizing: border-box;
 
+    list-style: none;
+    text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.8rem;
+    color: var(--text-color);
+
+    background-color: var(--body-background);
+}
+
+span {
+    color: var(--color-logo);
+}
+
+button, a {
+    transition: 300ms;
+    cursor: pointer;
+}
+
+button:hover, a:hover {
+    opacity: .7;
+}
+
+.container {
+    padding: 0rem 30rem 0 30rem;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+
+    background-color: var(--subtitle-color);
+}
+
+header {
+    background-image: url("./assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -1rem;
+
+    gap: 9rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 6rem;
+}
+
+header nav button {
+    background-color: var(--text-color);
+    color: var(--black-text);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1.6rem;
+    padding: 1rem;
+
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+header nav ul {
+    display: flex;
+
+    gap: 6rem;
+}
+
+header nav ul li a {
+    color: var(--text-color);
+}
+
+header .hero {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 4rem;
+}
+
+header .hero h1 {
+    font-size: 5rem;
+    line-height: 6.1rem
+}
+
+header .hero .phrase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 5.5rem;
+
+    font-size: 1.8rem;
+}
+
+header .hero .artist {
+    display: flex;
+    align-items: flex-end;
+
+    gap: .6rem;
+}
+
+header .hero .artist p:nth-child(1) {
+    font-weight: bold;
+}
+
+header .gallery .gallery-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 25%;
+
+    gap: 1.6rem;
+}
+
+header .gallery .gallery-row:nth-child(1) {
+    margin-bottom: 6rem;
+}
+
+header .gallery .gallery-row > img {
+    border: 1px solid var(--text-color);
+}
+
+main .about {
+    display: flex;
+    align-items: center;
+}
+
+main .about .stats {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 7rem;
+    padding: 0 7rem 0 30rem;
+
+}
+
+main .about .stats .stat h2 {
+    line-height: 6rem;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+main .about .stats .stat p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--subtitle-color);
+}
+
+main .about .stats .stat:nth-child(1) {
+    padding: 13rem 0 0 0;
+}
+
+main .about .stats .stat:nth-child(3) {
+    padding: 0 0 13rem 0;
+}
+
+main .about .description {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7rem;
+    padding-top: 8rem;
+
+    border-left: 1px solid var(--subtitle-color);
+}
+
+main .about .description .top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 12.8rem;
+    padding-inline: 6.8rem 30rem;
+}
+
+main .about .description .top-content .paragraph {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6.3rem;
+}
+
+main .about .description .top-content .paragraph p {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+main .about .description .top-content .paragraph p > a {
+    color: var(--color-logo);
+    text-decoration: underline;
+}
+
+main .about .description .top-content .paragraph a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+main .about .description .banner {
+    overflow: hidden;
+    max-width: 1440px;
+}
+
+main .about .description .banner img {
+    display: block;
+    width: 100%;
+}
+
+main .popular-weekly {
+    padding-block: 15rem;
+}
+
+main .popular-weekly h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+
+    margin-bottom: 15.8rem;
+}
+
+main .popular-weekly .astronauts {
+    display: flex;
+    align-items: center;
+}
+
+main .popular-weekly .astronauts .astronauts-content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5rem;
+}
+
+main .popular-weekly .astronauts .astronauts-content .astronaut {
+    display: flex;
+    flex-direction: column;
+}
+
+main .popular-weekly .astronauts .astronauts-content .astronaut .astronaut-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 4.4rem;
+}
+
+main .popular-weekly .astronauts .astronauts-content .astronaut .astronaut-title h4 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.6rem;
+}
+
+main .popular-weekly .astronauts .astronauts-content .astronaut .astronaut-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-bottom: 2.6rem;
+}
+
+main .popular-weekly .astronauts .astronauts-content .astronaut .astronaut-subtitle p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    
+    color: var(--subtitle-color);
+}
+
+main .popular-weekly .divider {
+    transform: rotate(90deg);
+}
+
+main .best-artist {
+    text-align: center;
+
+    padding-bottom: 15rem;
+}
+
+main .best-artist h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+
+    margin-bottom: 12rem;
+}
+
+main .best-artist a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.3rem;
+
+    color: var(--text-color);
+}
+
+main .best-artist .best-artist-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 11.1rem;
+}
+
+main .best-artist .best-artist-content .artist-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 11.1rem;
+}
+
+main .best-artist .best-artist-content .artist-row:last-child {
+    margin-bottom: 5.4rem;
+}
+
+main .best-artist .best-artist-content .artist-row .artist {
+    display: flex;
+    align-items: center;
+
+    width: 360px;
+    height: 150px;
+
+    gap: 4rem;
+    padding: 2.5rem 3.2rem;
+
+    background-color: var(--card-color);
+
+    cursor: pointer;
+
+    transition: 300ms;
+}
+
+main .best-artist .best-artist-content .artist-row .artist .artist-description h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+main .best-artist .best-artist-content .artist-row .artist .artist-description p {
+    font-size: 2rem;
+    font-weight: 500;
+    
+    color: var(--color-logo);
+}
+
+main .best-artist .best-artist-content .artist-row:first-child .artist:nth-child(2) {
+    background-color: var(--color-logo);
+}
+
+main .best-artist .best-artist-content .artist-row:first-child .artist:nth-child(2) .artist-description h3, main .best-artist .best-artist-content .artist-row:first-child .artist:nth-child(2) .artist-description p {
+    color: var(--text-color);
+}
+
+main .best-artist .best-artist-content .artist-row .artist .artist-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 1rem;
+}
+
+main .back-to-top {
+    background-color: var(--card-color);
+
+    padding-block: 8.2rem 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .back-to-top a.button {
+    width: 8rem;
+    height: 8rem;
+
+    background-color: var(--color-logo);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .link-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--card-color);
+
+    padding-block: 7rem 6.2rem;
+
+    overflow: hidden;
+}
+
+main .link-content .divider {
+    transform: rotate(90deg);
+}
+
+main .link-content .newsletter {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 2.5rem;
+}
+
+main .link-content .newsletter h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.6rem;
+}
+
+main .link-content .newsletter form {
+    display: flex;
+    align-items: center;
+}
+
+main .link-content .newsletter form input {
+    background-color: var(--color-input);
+    
+    border: none;
+    border-radius: 0;
+
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    color: var(--text-color);
+
+    padding: 2rem 2.5rem 2rem 2rem;
+}
+
+main .link-content .newsletter form input:focus-within {
+    outline: none;
+
+    border: 1px solid var(--color-logo);
+}
+
+main .link-content .newsletter form button {
+    background-color: var(--text-color);
+    color: var(--black-text);
+
+    font-size: 2rem;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 0;
+
+    padding: 2rem 2.5rem;
+}
+
+main .link-content .useful-links {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 12.8rem;
+}
+
+main .link-content .useful-links .company-links, main .link-content .useful-links .map-links, main .link-content .useful-links .other-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.5rem;
+}
+
+main .link-content .useful-links .company-links a, main .link-content .useful-links .map-links a, main .link-content .useful-links .other-links a {
+    color: var(--subtitle-color);
+}
+
+main .link-content .useful-links h5.highlighted {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: var(--text-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--card-color);
+    color: var(--subtitle-color);
+
+    padding-block: 7rem !important;
+}
+
+footer a {
+    color: var(--subtitle-color);
+}
+
+footer .social-links {
+    display: flex;
+    gap: 5rem;
 }
