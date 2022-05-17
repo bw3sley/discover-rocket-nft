@@ -56,6 +56,14 @@ button:hover, a:hover {
     background-color: var(--subtitle-color);
 }
 
+.popular-weekly .divider {
+    transform: rotate(90deg);
+}
+
+.link-content .divider {
+    transform: rotate(90deg);
+}
+
 header {
     background-image: url("./assets/background.png");
     background-repeat: no-repeat;
@@ -77,7 +85,7 @@ header nav {
     padding-top: 6rem;
 }
 
-header nav button {
+nav button {
     background-color: var(--text-color);
     color: var(--black-text);
 
@@ -92,29 +100,33 @@ header nav button {
     font-weight: 800;
 }
 
-header nav ul {
+nav button.cta:hover {
+    opacity: .9;
+}
+
+nav ul {
     display: flex;
 
     gap: 6rem;
 }
 
-header nav ul li a {
+nav ul li a {
     color: var(--text-color);
 }
 
-header .hero {
+.hero {
     display: flex;
     justify-content: space-between;
 
     gap: 4rem;
 }
 
-header .hero h1 {
+.hero h1 {
     font-size: 5rem;
     line-height: 6.1rem
 }
 
-header .hero .phrase {
+.hero .phrase {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,18 +136,18 @@ header .hero .phrase {
     font-size: 1.8rem;
 }
 
-header .hero .artist {
+.hero .artist {
     display: flex;
     align-items: flex-end;
 
     gap: .6rem;
 }
 
-header .hero .artist p:nth-child(1) {
+.hero .artist p:nth-child(1) {
     font-weight: bold;
 }
 
-header .gallery .gallery-row {
+.gallery-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -144,20 +156,20 @@ header .gallery .gallery-row {
     gap: 1.6rem;
 }
 
-header .gallery .gallery-row:nth-child(1) {
+.gallery-row:nth-child(1) {
     margin-bottom: 6rem;
 }
 
-header .gallery .gallery-row > img {
+.gallery-row > img {
     border: 1px solid var(--text-color);
 }
 
-main .about {
+.about {
     display: flex;
     align-items: center;
 }
 
-main .about .stats {
+.stats {
     display: flex;
     flex-direction: column;
 
@@ -165,30 +177,29 @@ main .about .stats {
 
     gap: 7rem;
     padding: 0 7rem 0 30rem;
-
 }
 
-main .about .stats .stat h2 {
+.stat h2 {
     line-height: 6rem;
     font-size: 5rem;
     font-weight: 600;
 }
 
-main .about .stats .stat p {
+.stat p {
     font-size: 2rem;
     font-weight: 600;
     color: var(--subtitle-color);
 }
 
-main .about .stats .stat:nth-child(1) {
+.stats .stat:nth-child(1) {
     padding: 13rem 0 0 0;
 }
 
-main .about .stats .stat:nth-child(3) {
+.stats .stat:nth-child(3) {
     padding: 0 0 13rem 0;
 }
 
-main .about .description {
+.description {
     display: flex;
     flex-direction: column;
 
@@ -198,7 +209,7 @@ main .about .description {
     border-left: 1px solid var(--subtitle-color);
 }
 
-main .about .description .top-content {
+.top-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,67 +218,67 @@ main .about .description .top-content {
     padding-inline: 6.8rem 30rem;
 }
 
-main .about .description .top-content .paragraph {
+.top-content .paragraph {
     display: flex;
     flex-direction: column;
 
     gap: 6.3rem;
 }
 
-main .about .description .top-content .paragraph p {
+.top-content .paragraph p {
     font-size: 1.8rem;
     line-height: 2.2rem;
 }
 
-main .about .description .top-content .paragraph p > a {
+.top-content .paragraph p > a {
     color: var(--color-logo);
     text-decoration: underline;
 }
 
-main .about .description .top-content .paragraph a {
+.top-content .paragraph a {
     color: var(--text-color);
     text-decoration: underline;
 }
 
-main .about .description .banner {
+.banner {
     overflow: hidden;
     max-width: 1440px;
 }
 
-main .about .description .banner img {
+.banner img {
     display: block;
     width: 100%;
 }
 
-main .popular-weekly {
+.popular-weekly {
     padding-block: 15rem;
 }
 
-main .popular-weekly h1 {
+.popular-weekly h1 {
     font-size: 5rem;
     line-height: 6rem;
 
     margin-bottom: 15.8rem;
 }
 
-main .popular-weekly .astronauts {
+.astronauts {
     display: flex;
     align-items: center;
 }
 
-main .popular-weekly .astronauts .astronauts-content {
+.astronauts-content {
     display: flex;
     flex-direction: column;
 
     gap: 5rem;
 }
 
-main .popular-weekly .astronauts .astronauts-content .astronaut {
+.astronaut {
     display: flex;
     flex-direction: column;
 }
 
-main .popular-weekly .astronauts .astronauts-content .astronaut .astronaut-title {
+.astronaut-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -275,13 +286,7 @@ main .popular-weekly .astronauts .astronauts-content .astronaut .astronaut-title
     margin-bottom: 4.4rem;
 }
 
-main .popular-weekly .astronauts .astronauts-content .astronaut .astronaut-title h4 {
-    font-size: 3rem;
-    font-weight: 500;
-    line-height: 3.6rem;
-}
-
-main .popular-weekly .astronauts .astronauts-content .astronaut .astronaut-subtitle {
+.astronaut-subtitle {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -289,7 +294,13 @@ main .popular-weekly .astronauts .astronauts-content .astronaut .astronaut-subti
     margin-bottom: 2.6rem;
 }
 
-main .popular-weekly .astronauts .astronauts-content .astronaut .astronaut-subtitle p {
+.astronaut-title h4 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.6rem;
+}
+
+.astronaut-subtitle p {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 2.4rem;
@@ -297,24 +308,20 @@ main .popular-weekly .astronauts .astronauts-content .astronaut .astronaut-subti
     color: var(--subtitle-color);
 }
 
-main .popular-weekly .divider {
-    transform: rotate(90deg);
-}
-
-main .best-artist {
+.best-artist {
     text-align: center;
 
     padding-bottom: 15rem;
 }
 
-main .best-artist h1 {
+.best-artist h1 {
     font-size: 5rem;
     line-height: 6rem;
 
     margin-bottom: 12rem;
 }
 
-main .best-artist a {
+.best-artist a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,7 +331,7 @@ main .best-artist a {
     color: var(--text-color);
 }
 
-main .best-artist .best-artist-content {
+.best-artist-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,7 +340,7 @@ main .best-artist .best-artist-content {
     gap: 11.1rem;
 }
 
-main .best-artist .best-artist-content .artist-row {
+.artist-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -341,11 +348,11 @@ main .best-artist .best-artist-content .artist-row {
     gap: 11.1rem;
 }
 
-main .best-artist .best-artist-content .artist-row:last-child {
+.artist-row:last-child {
     margin-bottom: 5.4rem;
 }
 
-main .best-artist .best-artist-content .artist-row .artist {
+.artist {
     display: flex;
     align-items: center;
 
@@ -362,27 +369,7 @@ main .best-artist .best-artist-content .artist-row .artist {
     transition: 300ms;
 }
 
-main .best-artist .best-artist-content .artist-row .artist .artist-description h3 {
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-main .best-artist .best-artist-content .artist-row .artist .artist-description p {
-    font-size: 2rem;
-    font-weight: 500;
-    
-    color: var(--color-logo);
-}
-
-main .best-artist .best-artist-content .artist-row:first-child .artist:nth-child(2) {
-    background-color: var(--color-logo);
-}
-
-main .best-artist .best-artist-content .artist-row:first-child .artist:nth-child(2) .artist-description h3, main .best-artist .best-artist-content .artist-row:first-child .artist:nth-child(2) .artist-description p {
-    color: var(--text-color);
-}
-
-main .best-artist .best-artist-content .artist-row .artist .artist-description {
+.artist-description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -390,7 +377,27 @@ main .best-artist .best-artist-content .artist-row .artist .artist-description {
     gap: 1rem;
 }
 
-main .back-to-top {
+.artist-description h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.artist-description p {
+    font-size: 2rem;
+    font-weight: 500;
+    
+    color: var(--color-logo);
+}
+
+.best-artist-content .artist-row:first-child .artist:nth-child(2) {
+    background-color: var(--color-logo);
+}
+
+.best-artist-content .artist-row:first-child .artist:nth-child(2) .artist-description h3, .best-artist-content .artist-row:first-child .artist:nth-child(2) .artist-description p {
+    color: var(--text-color);
+}
+
+.back-to-top {
     background-color: var(--card-color);
 
     padding-block: 8.2rem 6rem;
@@ -400,7 +407,7 @@ main .back-to-top {
     justify-content: space-between;
 }
 
-main .back-to-top a.button {
+.back-to-top a.button {
     width: 8rem;
     height: 8rem;
 
@@ -411,7 +418,7 @@ main .back-to-top a.button {
     align-items: center;
 }
 
-main .link-content {
+.link-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -423,29 +430,25 @@ main .link-content {
     overflow: hidden;
 }
 
-main .link-content .divider {
-    transform: rotate(90deg);
-}
-
-main .link-content .newsletter {
+.newsletter {
     display: flex;
     flex-direction: column;
     
     gap: 2.5rem;
 }
 
-main .link-content .newsletter h3 {
+.newsletter h3 {
     font-size: 3rem;
     font-weight: 500;
     line-height: 3.6rem;
 }
 
-main .link-content .newsletter form {
+.newsletter form {
     display: flex;
     align-items: center;
 }
 
-main .link-content .newsletter form input {
+.newsletter form input {
     background-color: var(--color-input);
     
     border: none;
@@ -459,13 +462,13 @@ main .link-content .newsletter form input {
     padding: 2rem 2.5rem 2rem 2rem;
 }
 
-main .link-content .newsletter form input:focus-within {
+.newsletter form input:focus-within {
     outline: none;
 
     border: 1px solid var(--color-logo);
 }
 
-main .link-content .newsletter form button {
+.newsletter form button {
     background-color: var(--text-color);
     color: var(--black-text);
 
@@ -478,25 +481,25 @@ main .link-content .newsletter form button {
     padding: 2rem 2.5rem;
 }
 
-main .link-content .useful-links {
+.useful-links {
     display: flex;
     justify-content: space-between;
 
     gap: 12.8rem;
 }
 
-main .link-content .useful-links .company-links, main .link-content .useful-links .map-links, main .link-content .useful-links .other-links {
+.company-links {
     display: flex;
     flex-direction: column;
 
     gap: 1.5rem;
 }
 
-main .link-content .useful-links .company-links a, main .link-content .useful-links .map-links a, main .link-content .useful-links .other-links a {
+.company-links a {
     color: var(--subtitle-color);
 }
 
-main .link-content .useful-links h5.highlighted {
+h5.highlighted {
     font-size: 2rem;
     font-weight: 700;
     line-height: 2.4rem;
@@ -518,7 +521,7 @@ footer a {
     color: var(--subtitle-color);
 }
 
-footer .social-links {
+.social-links {
     display: flex;
     gap: 5rem;
 }
