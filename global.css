@@ -136,7 +136,11 @@ nav ul li a {
     font-size: 1.8rem;
 }
 
-.hero .artist {
+p.text {
+    font-size: 1.8rem;
+}
+
+.hero .phrase .artist {
     display: flex;
     align-items: flex-end;
 
@@ -352,7 +356,7 @@ nav ul li a {
     margin-bottom: 5.4rem;
 }
 
-.artist {
+.artist-row .artist {
     display: flex;
     align-items: center;
 
