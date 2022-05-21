@@ -114,19 +114,19 @@ nav ul li a {
     color: var(--text-color);
 }
 
-.hero {
+header .hero {
     display: flex;
     justify-content: space-between;
 
     gap: 4rem;
 }
 
-.hero h1 {
+header .hero h1 {
     font-size: 5rem;
     line-height: 6.1rem
 }
 
-.hero .phrase {
+header .hero .phrase {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,18 +140,18 @@ p.text {
     font-size: 1.8rem;
 }
 
-.hero .phrase .artist {
+header .hero .phrase .artist {
     display: flex;
     align-items: flex-end;
 
     gap: .6rem;
 }
 
-.hero .artist p:nth-child(1) {
+header .hero .artist p:nth-child(1) {
     font-weight: bold;
 }
 
-.gallery-row {
+header .gallery-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,20 +160,20 @@ p.text {
     gap: 1.6rem;
 }
 
-.gallery-row:nth-child(1) {
+header .gallery-row:nth-child(1) {
     margin-bottom: 6rem;
 }
 
-.gallery-row > img {
+header .gallery-row > img {
     border: 1px solid var(--text-color);
 }
 
-.about {
+main .about {
     display: flex;
     align-items: center;
 }
 
-.stats {
+.about .stats {
     display: flex;
     flex-direction: column;
 
@@ -183,27 +183,27 @@ p.text {
     padding: 0 7rem 0 30rem;
 }
 
-.stat h2 {
+.about .stat h2 {
     line-height: 6rem;
     font-size: 5rem;
     font-weight: 600;
 }
 
-.stat p {
+.about .stat p {
     font-size: 2rem;
     font-weight: 600;
     color: var(--subtitle-color);
 }
 
-.stats .stat:nth-child(1) {
+.about .stats .stat:nth-child(1) {
     padding: 13rem 0 0 0;
 }
 
-.stats .stat:nth-child(3) {
+.about .stats .stat:nth-child(3) {
     padding: 0 0 13rem 0;
 }
 
-.description {
+.about .description {
     display: flex;
     flex-direction: column;
 
@@ -213,7 +213,7 @@ p.text {
     border-left: 1px solid var(--subtitle-color);
 }
 
-.top-content {
+.about .top-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,39 +222,39 @@ p.text {
     padding-inline: 6.8rem 30rem;
 }
 
-.top-content .paragraph {
+.about .top-content .paragraph {
     display: flex;
     flex-direction: column;
 
     gap: 6.3rem;
 }
 
-.top-content .paragraph p {
+.about .top-content .paragraph p {
     font-size: 1.8rem;
     line-height: 2.2rem;
 }
 
-.top-content .paragraph p > a {
+.about .top-content .paragraph p > a {
     color: var(--color-logo);
     text-decoration: underline;
 }
 
-.top-content .paragraph a {
+.about .top-content .paragraph a {
     color: var(--text-color);
     text-decoration: underline;
 }
 
-.banner {
+.about .banner {
     overflow: hidden;
     max-width: 1440px;
 }
 
-.banner img {
+.about .banner img {
     display: block;
     width: 100%;
 }
 
-.popular-weekly {
+main .popular-weekly {
     padding-block: 15rem;
 }
 
@@ -265,24 +265,24 @@ p.text {
     margin-bottom: 15.8rem;
 }
 
-.astronauts {
+.popular-weekly .astronauts {
     display: flex;
     align-items: center;
 }
 
-.astronauts-content {
+.popular-weekly .astronauts-content {
     display: flex;
     flex-direction: column;
 
     gap: 5rem;
 }
 
-.astronaut {
+.popular-weekly .astronaut {
     display: flex;
     flex-direction: column;
 }
 
-.astronaut-title {
+.popular-weekly .astronaut-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -290,7 +290,7 @@ p.text {
     margin-bottom: 4.4rem;
 }
 
-.astronaut-subtitle {
+.popular-weekly .astronaut-subtitle {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -298,13 +298,13 @@ p.text {
     margin-bottom: 2.6rem;
 }
 
-.astronaut-title h4 {
+.popular-weekly .astronaut-title h4 {
     font-size: 3rem;
     font-weight: 500;
     line-height: 3.6rem;
 }
 
-.astronaut-subtitle p {
+.popular-weekly .astronaut-subtitle p {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 2.4rem;
@@ -434,25 +434,25 @@ p.text {
     overflow: hidden;
 }
 
-.newsletter {
+.link-content .newsletter {
     display: flex;
     flex-direction: column;
     
     gap: 2.5rem;
 }
 
-.newsletter h3 {
+.link-content .newsletter h3 {
     font-size: 3rem;
     font-weight: 500;
     line-height: 3.6rem;
 }
 
-.newsletter form {
+.link-content .newsletter form {
     display: flex;
     align-items: center;
 }
 
-.newsletter form input {
+.link-content .newsletter form input {
     background-color: var(--color-input);
     
     border: none;
@@ -466,13 +466,13 @@ p.text {
     padding: 2rem 2.5rem 2rem 2rem;
 }
 
-.newsletter form input:focus-within {
+.link-content .newsletter form input:focus-within {
     outline: none;
 
     border: 1px solid var(--color-logo);
 }
 
-.newsletter form button {
+.link-content .newsletter form button {
     background-color: var(--text-color);
     color: var(--black-text);
 
@@ -485,21 +485,21 @@ p.text {
     padding: 2rem 2.5rem;
 }
 
-.useful-links {
+.link-content .useful-links {
     display: flex;
     justify-content: space-between;
 
     gap: 12.8rem;
 }
 
-.company-links {
+.link-content .company-links {
     display: flex;
     flex-direction: column;
 
     gap: 1.5rem;
 }
 
-.company-links a {
+.link-content .company-links a {
     color: var(--subtitle-color);
 }
 
