@@ -8,7 +8,7 @@
 
 ![Preview Screen](./assets/rocket-nft-cover.png)
 
-[Click here to see the design](https://www.figma.com/file/7Vu9DzUaCZIV4nibzkjgB4/dev.finance%24-Maratona-Discover) you need to have an account on [Figma](https://www.figma.com/).
+[Click here to see the design](https://www.figma.com/file/UMbEsHXSFBmiZPSZ7zcADr/DD-%2F-Rocket-NFTs-(Copy)?node-id=0%3A1) you need to have an account on [Figma](https://www.figma.com/).
 
 ## 💻 About this project
 
